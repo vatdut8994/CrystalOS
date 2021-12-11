@@ -359,6 +359,7 @@ class MainThread(QThread):
                         response = response + ""
 
                     else:
+                        print(type(response))
                         response = response + web_scrapper(self.inp)
 
                     speak(response)
